@@ -1,0 +1,16 @@
+cmake_minimum_required(VERSION 2.8)
+
+project(CRTP)
+
+set(SOURCE_CODE 
+		src/main.cpp
+		src/ClassicPolymorphism.h
+		src/ClassicPolymorphism.cpp
+		src/CRTP.h
+		src/CRTP.cpp
+)
+
+add_executable(CRTP ${SOURCE_CODE})
+
+#target_link_libraries(CRTP)
+
