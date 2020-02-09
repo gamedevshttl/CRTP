@@ -5,10 +5,12 @@ project(CRTP)
 set(SOURCE_CODE 
 		src/main.cpp
 		src/ClassicPolymorphism.h
-		src/ClassicPolymorphism.cpp
 		src/CRTP.h
-		src/CRTP.cpp
 )
+
+if (CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
+	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17")
+endif()
 
 add_executable(CRTP ${SOURCE_CODE})
 
