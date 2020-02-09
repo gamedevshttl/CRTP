@@ -36,10 +36,10 @@ execute time duration = 3084.01 milliseconds\
 Сначала убеждаемся, что CRTP Polymorphism работает корректно - выводит тоже самое что и классический полиморфизм(виртуальные функции).
 Далее замерям время выполнения.\
 Вызов пустой функции через указатель производного класса.\
-
+\
 Classic Polymorphism\
 execute time duration = 305.869 milliseconds\
-
+\
 CRTP Polymorphism\
 execute time duration = 253.162 milliseconds\
 \
@@ -51,7 +51,7 @@ execute time duration = 253.162 milliseconds\
 Classic Polymorphism\
 vector unique_ptr<Parent> on Derrived class\
 execute time duration = 1619.15 milliseconds\
-
+\
 CRTP Polymorphism\
 vector unique_ptr<Parent> on Derrived class\
 execute time duration = 3084.01 milliseconds\
