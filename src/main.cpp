@@ -5,6 +5,7 @@
 #include <any>
 #include <variant>
 #include <chrono>
+#include <memory>
 
 template <typename Type, typename... Ts>
 auto makeWidget(Ts&&... params)
