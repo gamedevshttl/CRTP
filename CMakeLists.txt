@@ -1,3 +1,4 @@
+#cmake -B build -S .
 cmake_minimum_required(VERSION 3.10)
 
 project(CRTP)
@@ -19,4 +20,3 @@ else()
 endif()
 
 add_executable(CRTP ${SOURCE_CODE})
-
